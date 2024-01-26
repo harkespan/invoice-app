@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('number')->unique();
             $table->integer('user_id')->unsigned();
+            $table->string('costumer_name');
             $table->datetime('inv_date');
             $table->integer('sub_total');
             $table->integer('discount')->default(0);
